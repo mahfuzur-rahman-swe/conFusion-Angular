@@ -1,0 +1,11 @@
+<div fxFlex="70" *ngIf="dish">
+  <mat-card *ngFor="let dishes of dish.comments">
+    <mat-card-content>
+        <pre>
+          {{dishes.comment}}
+          {{dishes.rating}} <span>Stars</span>
+          <span>-- </span>{{dishes.author}} {{dishes.date | date}}
+        </pre>
+    </mat-card-content>
+  </mat-card>
+</div>
